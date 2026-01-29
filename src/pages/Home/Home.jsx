@@ -1,5 +1,5 @@
 import Visual from '../../components/home/visual/Visual';
-import Header from '../../components/common/header/header';
+import Header from '../../components/common/Header/Header';
 import Menu from '../../components/home/menu/Menu';
 import Sec01 from '../../components/home/sec01/Sec01';
 import Sec02 from '../../components/home/sec02/Sec02';
@@ -8,7 +8,7 @@ import Sec03 from '../../components/home/sec03/Sec03';
 import Sec04 from '../../components/home/sec04/Sec04';
 import Sec05 from '../../components/home/sec05/Sec05';
 import Sec06 from '../../components/home/sec06/Sec06';
-import Footer from '../../components/common/footer/Footer';
+import Footer from '../../components/common/Footer/Footer';
 import './style.css';
 
 const Home = () => {
