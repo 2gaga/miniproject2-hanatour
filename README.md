@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-# mini2-hanatour
-
 # miniproject02-hanetour-renewer
 
 ✈️ Hana Tour Renewal Project
