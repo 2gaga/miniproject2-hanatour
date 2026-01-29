@@ -53,7 +53,6 @@ const Sec01 = () => {
         }
 
         return item.type.includes(current);
-        //return item.type === current;
     });
 
     return (
@@ -62,7 +61,7 @@ const Sec01 = () => {
                 <div className="sec01_top">
                     <h2>블랙프라이데이 타임세일</h2>
                     <button type="button" className="more">
-                        <span>더보기+</span>
+                        <span>더보기 +</span>
                     </button>
                 </div>
                 <Filter_List filters={filterMenu} current={current} onChange={onChange} />

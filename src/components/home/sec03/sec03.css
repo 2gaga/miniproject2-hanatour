@@ -1,6 +1,4 @@
-/* 기본 섹션 레이아웃 */
 .section3 .inner {
-    /* width: 1314px; */
     max-width: var(--inner-width);
     margin: 0 auto;
     margin-top: 70px;
@@ -18,13 +16,12 @@
     justify-content: center;
 }
 
-/* 큰 카드 사이즈 유지 */
+
 .section3 .big-card {
     width: 405px;
     height: 508px;
 }
 
-/* 오른쪽 작은 카드들 4개 (ul) */
 .section3 .card-block ul {
     list-style: none;
     display: grid;

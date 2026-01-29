@@ -196,9 +196,9 @@ header .gnb .sub-menu li a:hover::after {
     width: 100%;
 }
 /* ///////////////////////////////////// */
-/* //////최상위 메뉴 hearderTop///////// */
+/* //////최상위 메뉴 headerTop///////// */
 /* ///////////////////////////////////// */
-header .hearderTop {
+header .headerTop {
     position: absolute;
     top: 0;
     display: flex;
@@ -206,7 +206,7 @@ header .hearderTop {
     margin-top: 3px;
     right: 260px;
 }
-header .hearderTop a {
+header .headerTop a {
     border-right: 1px solid #ddd;
     display: inline-block;
     padding: 0 12px;
@@ -218,19 +218,18 @@ header .hearderTop a {
     cursor: pointer;
     z-index: 20;
 }
-.hearderTop a:last-child {
+.headerTop a:last-child {
     border-right: none;
 }
-header .hearderTop a:hover {
+header .headerTop a:hover {
     color: #08d1d9;
 }
-header .hearderTop a::after {
+header .headerTop a::after {
     content: '';
     display: block;
     width: 0;
     height: 2px;
     background-color: #08d1d9;
-    /* 변경  relative->absolute*/
     position: absolute;
     left: 50%;
     bottom: 0;
@@ -238,7 +237,7 @@ header .hearderTop a::after {
     transition: 0.3s;
 }
 
-header .hearderTop a:hover::after {
+header .headerTop a:hover::after {
     width: 70%;
 }
 .no-data-box {

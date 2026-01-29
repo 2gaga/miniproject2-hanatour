@@ -2,8 +2,6 @@
     display: flex;
     width: 1400px;
     margin: 0 auto;
-    /* height: 945px; */
-    /* flex-direction: column; */
     align-items: flex-start;
     gap: 37px;
 }
@@ -14,10 +12,8 @@
     display: flex;
     height: 100px;
     padding-left: 60px;
-    /* background: #d4d4d4; */
     background: #5e2bb8;
-    /* justify-content: center;   좌우 */
-    align-items: center; /* 위아래 */
+    align-items: center;
     gap: 14px;
 }
 .inner_mypage .my_text .title-line h2 {
@@ -34,9 +30,8 @@
 }
 .menu_first {
     display: flex;
-    gap: 40px; /* 대메뉴 간의 간격 */
-    /* border-bottom: 1px solid #ddd; */
-    padding-top: 10px; /* 띄니까 안예쁘긴해.. */
+    gap: 40px; 
+    padding-top: 10px;
     padding-bottom: 10px;
     justify-content: flex-start;
 }
@@ -47,7 +42,6 @@
     align-items: center;
 }
 .inner_mypage .title-bottom .menu_first button {
-    /* padding: 8px 49px 3px 46px; */
     all: unset;
     width: 200px;
     height: 45px;
@@ -366,7 +360,6 @@
     gap: 7px;
     border-radius: 8px;
     background-color: #e7e3ef;
-    /* border: 1px solid #dcd7e5; */
     box-sizing: border-box;
     margin-top: 10px;
 

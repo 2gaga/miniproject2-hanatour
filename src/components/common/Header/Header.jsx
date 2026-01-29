@@ -1,12 +1,12 @@
 import Search from './Search';
 import GNB from './GNB';
-import './header.css';
+import './Header.css';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
         <header>
-            <div className="hearderTop">
+            <div className="headerTop">
                 <span>로그인</span>
                 <Link to="/mypage">마이페이지</Link>
                 <span>예약내역</span>

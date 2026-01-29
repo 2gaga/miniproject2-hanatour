@@ -65,7 +65,7 @@ const Sec02 = () => {
                 <div className="sec02_top">
                     <h2>취향에 따라 떠나는 여행</h2>
                     <button type="button" className="more">
-                        <span>더보기+</span>
+                        <span>더보기 +</span>
                     </button>
                 </div>
                 <Filter_List filters={filterMenu2} current={current} onChange={onChange} />

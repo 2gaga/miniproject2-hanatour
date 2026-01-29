@@ -11,39 +11,39 @@ const Footer = () => {
                     <div className="footer-left">
                         <ul className="footer-policy">
                             <li>
-                                <a href="#" onClick={(e) => e.preventDefault()}>
+                                <span onClick={(e) => e.preventDefault()}>
                                     회사소개
-                                </a>
+                                </span>
                             </li>
                             <li>
-                                <a href="#" onClick={(e) => e.preventDefault()}>
+                                <span onClick={(e) => e.preventDefault()}>
                                     이용약관
-                                </a>
+                                </span>
                             </li>
                             <li>
-                                <a href="#" onClick={(e) => e.preventDefault()}>
+                                <span onClick={(e) => e.preventDefault()}>
                                     개인정보처리방침
-                                </a>
+                                </span>
                             </li>
                             <li>
-                                <a href="#" onClick={(e) => e.preventDefault()}>
+                                <span onClick={(e) => e.preventDefault()}>
                                     여행약관
-                                </a>
+                                </span>
                             </li>
                             <li>
-                                <a href="#" onClick={(e) => e.preventDefault()}>
+                                <span onClick={(e) => e.preventDefault()}>
                                     해외여행자보험
-                                </a>
+                                </span>
                             </li>
                             <li>
-                                <a href="#" onClick={(e) => e.preventDefault()}>
+                                <span onClick={(e) => e.preventDefault()}>
                                     마케팅제휴
-                                </a>
+                                </span>
                             </li>
                             <li>
-                                <a href="#" onClick={(e) => e.preventDefault()}>
+                                <span onClick={(e) => e.preventDefault()}>
                                     공식인증예약센터 검색
-                                </a>
+                                </span>
                             </li>
                         </ul>
                         <div className="footer-info">

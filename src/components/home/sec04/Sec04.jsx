@@ -2,9 +2,7 @@ import { useState } from 'react'; // 1. useState 임포트
 import './sec04.css';
 
 const Sec04 = () => {
-    // 2. 현재 보여줄 이미지 경로를 상태로 관리 (초기값: 첫 번째 이미지)
     const [imgSrc, setImgSrc] = useState('/images/sec06_01.png');
-    // 어떤 버튼이 활성화되었는지 알기 위한 상태
     const [activeIndex, setActiveIndex] = useState(0);
 
     const tabs = [

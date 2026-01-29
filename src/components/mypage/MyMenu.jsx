@@ -127,7 +127,7 @@ const MyMenu = () => {
                     </div>
 
                     {/* 콘텐츠 영역 */}
-                    {['list', 'haet', 'cart'].includes(currentSection) ? (
+                    {['list', 'heart', 'cart'].includes(currentSection) ? (
                         <>
                             {/* 3차 메뉴 */}
                             <div className="mypage_sec02">
