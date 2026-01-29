@@ -7,19 +7,19 @@ const Header = () => {
     return (
         <header>
             <div className="hearderTop">
-                <a href="">로그인</a>
+                <span>로그인</span>
                 <Link to="/mypage">마이페이지</Link>
-                <a href="">예약내역</a>
-                <a href="">찜 목록</a>
-                <a href="">장바구니</a>
+                <span>예약내역</span>
+                <span>찜 목록</span>
+                <span>장바구니</span>
             </div>
             <div className="inner">
                 <div className="logo-menu">
-                    <a className="menu-trigger" href="#">
+                    <div className="menu-trigger">
                         <span></span>
                         <span></span>
                         <span></span>
-                    </a>
+                    </div>
                     <div className="title_logo">
                         <Link to="/">
                             <img src="/images/GNB_LOGO.png" alt="하나투어 로고" />
