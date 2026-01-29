@@ -107,7 +107,7 @@ const MyMenu = () => {
                                     onClick={() => {
                                         setTitleText('찜 목록');
                                         setActiveSecondMenu('찜 목록');
-                                        setCurrentSection('haet');
+                                        setCurrentSection('heart');
                                     }}
                                 >
                                     <a>찜 목록</a>
