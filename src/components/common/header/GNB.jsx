@@ -1,14 +1,13 @@
 import './header.css';
-import { Link } from 'react-router-dom';
 
 const GNB = () => {
     return (
         <nav className="gnb">
             <ul className="menu">
                 <li className="menu-item">
-                    <Link to="/best" className="main-link">
+                    <a href="#" className="main-link">
                         베스트
-                    </Link>
+                    </a>
                 </li>
                 <li className="menu-item">
                     <a href="#" className="main-link">
@@ -36,10 +35,14 @@ const GNB = () => {
                     </ul>
                 </li>
                 <li className="menu-item">
-                    <a href="#" className="main-link">항공</a>
+                    <a href="#" className="main-link">
+                        항공
+                    </a>
                 </li>
                 <li className="menu-item">
-                    <a href="#"className="main-link">호텔</a>
+                    <a href="#" className="main-link">
+                        호텔
+                    </a>
                     <ul className="sub-menu">
                         <li>
                             <a href="#">해외호텔</a>
@@ -50,7 +53,9 @@ const GNB = () => {
                     </ul>
                 </li>
                 <li className="menu-item">
-                    <a href="#"className="main-link">투어/입장권</a>
+                    <a href="#" className="main-link">
+                        투어/입장권
+                    </a>
                     <ul className="sub-menu">
                         <li>
                             <a href="#">일본</a>
@@ -76,7 +81,9 @@ const GNB = () => {
                     </ul>
                 </li>
                 <li className="menu-item">
-                    <a href="#" className="main-link">국내여행</a>
+                    <a href="#" className="main-link">
+                        국내여행
+                    </a>
                     <ul className="sub-menu">
                         <li>
                             <a href="#">제주여행</a>
@@ -96,7 +103,9 @@ const GNB = () => {
                     </ul>
                 </li>
                 <li className="menu-item">
-                    <a href="#" className="main-link">테마여행</a>
+                    <a href="#" className="main-link">
+                        테마여행
+                    </a>
                     <ul className="sub-menu">
                         <li>
                             <a href="#">허니문</a>
