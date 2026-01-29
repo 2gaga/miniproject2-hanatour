@@ -47,4 +47,4 @@ src/
 해결: App.jsx 내의 import 경로와 실제 폴더/파일명의 대소문자를 일치하도록 수정하여 배포 이슈를 해결했습니다.
 
 🔗 배포 링크
-Live Demo: [여기에 Vercel 배포 URL을 입력하세요]
+Live Demo: (https://mini2-hanatour.vercel.app/)
