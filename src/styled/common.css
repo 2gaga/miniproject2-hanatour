@@ -1,0 +1,32 @@
+:root {
+    --inner-width: 1300px;
+}
+/* #wrap {
+    width: 100%;
+    min-width: 1600px;
+} */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Pretendard', 'Noto-sans', 'Inter', sans-serif;
+    color: #252525;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+}

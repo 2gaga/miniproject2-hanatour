@@ -1,0 +1,68 @@
+const packageData = [
+    {
+        id: 1,
+        type: 'package',
+        title: '오사카 3박 4일',
+        date: '2026.03.12 ~ 03.15',
+        price: 890000,
+        checked: false,
+    },
+    {
+        id: 2,
+        type: 'package',
+        title: '도쿄 4박 5일',
+        date: '2026.04.02 ~ 04.06',
+        price: 1250000,
+        checked: false,
+    },
+    {
+        id: 3,
+        type: 'package',
+        title: '후쿠오카 2박 3일',
+        date: '2026.05.18 ~ 05.20',
+        price: 650000,
+        checked: false,
+    },
+    {
+        id: 4,
+        type: 'package',
+        title: '오키나와 3박 4일',
+        date: '2026.06.10 ~ 06.13',
+        price: 980000,
+        checked: false,
+    },
+    {
+        id: 5,
+        type: 'package',
+        title: '삿포로 4박 5일',
+        date: '2026.07.01 ~ 07.05',
+        price: 1480000,
+        checked: false,
+    },
+    {
+        id: 6,
+        type: 'package',
+        title: '타이베이 3박 4일',
+        date: '2026.08.19 ~ 08.22',
+        price: 830000,
+        checked: false,
+    },
+    {
+        id: 7,
+        type: 'package',
+        title: '다낭 4박 5일',
+        date: '2026.09.14 ~ 09.18',
+        price: 990000,
+        checked: false,
+    },
+    {
+        id: 8,
+        type: 'package',
+        title: '싱가포르 3박 5일',
+        date: '2026.10.03 ~ 10.07',
+        price: 1590000,
+        checked: false,
+    },
+];
+
+export default packageData;

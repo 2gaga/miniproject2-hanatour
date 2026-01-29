@@ -1,0 +1,70 @@
+/* 섹션 전체 레이아웃 */
+.section5 {
+    padding: 80px 0;
+}
+
+.section5 .inner {
+    max-width: var(--inner-width);
+    margin: 0 auto;
+}
+
+.section5 h2 {
+    font-size: 21px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* 리스트 레이아웃 */
+.section5 ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.section5 ul li {
+    flex: 1; /* 4개의 카드가 균일한 너비를 가짐 */
+    display: flex;
+    flex-direction: column;
+}
+
+/* 이미지 스타일 */
+.section5 ul img {
+    width: 100%; /* 부모 리스트 너비에 맞춤 */
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 13px;
+    display: block;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.section5 ul img:hover {
+    transform: translateY(-5px); /* 마우스 올리면 살짝 위로 */
+}
+
+/* 텍스트 공통 스타일 */
+.section5 ul li p {
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+/* 서브 텍스트 (삼성카드 등) */
+.section5 ul li .sub {
+    color: #7f7766;
+    font-family: 'Pretendard', 'Noto-snans', 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+/* 메인 타이틀 텍스트 */
+.section5 ul li .title {
+    color: #333;
+    font-family: 'Pretendard', 'Noto-snans', 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}

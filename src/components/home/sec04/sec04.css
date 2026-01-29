@@ -1,0 +1,52 @@
+.section4 .inner {
+    max-width: var(--inner-width);
+    margin: 70px auto 0;
+}
+
+.section4 h2 {
+    font-size: 21px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.section4 .recommend-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.section4 .recommend-tabs {
+    display: flex;
+    gap: 40px;
+    margin: 60px 0 10px;
+}
+
+.section4 li {
+    list-style: none;
+}
+
+.section4 li button {
+    all: unset;
+    cursor: pointer;
+    color: #dcdcdc;
+    font-family: 'Pretendard', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.section4 li button.is-active {
+    color: #252525;
+}
+
+.section4 .recommend-content {
+    margin-top: 10px;
+    line-height: 0;
+}
+
+.section4 .recommend-content img {
+    height: 235px;
+    width: auto;
+    display: block;
+    object-fit: contain;
+}

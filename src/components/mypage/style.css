@@ -1,0 +1,408 @@
+.inner_mypage {
+    display: flex;
+    width: 1400px;
+    margin: 0 auto;
+    /* height: 945px; */
+    /* flex-direction: column; */
+    align-items: flex-start;
+    gap: 37px;
+}
+.inner_mypage .my_text {
+    flex: 1;
+}
+.inner_mypage .my_text .title-line {
+    display: flex;
+    height: 100px;
+    padding-left: 60px;
+    /* background: #d4d4d4; */
+    background: #5e2bb8;
+    /* justify-content: center;   좌우 */
+    align-items: center; /* 위아래 */
+    gap: 14px;
+}
+.inner_mypage .my_text .title-line h2 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+}
+.inner_mypage .my_text .title-line span {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    border-left: 2px solid #fff;
+    padding-left: 10px;
+}
+.menu_first {
+    display: flex;
+    gap: 40px; /* 대메뉴 간의 간격 */
+    /* border-bottom: 1px solid #ddd; */
+    padding-top: 10px; /* 띄니까 안예쁘긴해.. */
+    padding-bottom: 10px;
+    justify-content: flex-start;
+}
+.menu_first .buttonbox {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inner_mypage .title-bottom .menu_first button {
+    /* padding: 8px 49px 3px 46px; */
+    all: unset;
+    width: 200px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #c9bae3;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.menu_first .buttonbox:hover button {
+    background: #08d1d9;
+}
+.menu_first ul {
+    list-style: none;
+    margin: 0;
+    padding: 15px 0;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: none; 
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    min-width: 140px;
+    z-index: 100;
+}
+.menu_first .buttonbox:hover ul {
+    display: flex;
+}
+.menu_first ul li {
+    font-size: 14px;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.2s;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+}
+.menu_first ul li:hover {
+    color: #08d1d9;
+    background-color: #f9f9f9;
+}
+.menu_third {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.menu_second {
+    padding-bottom: 10px;
+}
+.menu_second li {
+    width: 174px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #ddd;
+    gap: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+.menu_second li a {
+    text-decoration: none;
+}
+
+.menu_second li img {
+    display: block;
+}
+.menu_second li:last-child {
+    border-right: none;
+}
+.menu_second li:hover,
+.menu_second li.active {
+    background: #7fe3e7;
+}
+.inner_mypage .menu_left {
+    display: flex;
+    gap: 30px;
+}
+.inner_mypage .menu_left button {
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    padding: 8px 18px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1;
+    color: #333;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: 20px;
+}
+
+/* /////테이블 css///////// */
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+
+.cart-table th,
+.cart-table td {
+    border: 1px solid #ddd;
+    padding: 12px 16px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.cart-table thead th {
+    background-color: #f5f5f5;
+    font-weight: 500;
+}
+
+.cart-table tbody td {
+    background-color: #fff;
+}
+.cart-table-wrap {
+    position: relative;
+}
+.check_function {
+    top: -45px; 
+    right: 0;
+    display: flex;
+    gap: 15px;
+}
+.check_function button {
+    padding: 6px 12px;
+    border: 1px solid #ddd;
+    background: #fff;
+    font-size: 13px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.check_function button:hover {
+    background: #f5f5f5;
+}
+.cart-table {
+    width: 100%;
+    table-layout: fixed; 
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+.cart-table th,
+.cart-table td {
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+    border-bottom: 1px solid #f4f4f4;
+    padding: 12px 8px;
+    text-align: center;
+}
+
+/* 각 열의 너비 고정 */
+.cart-table th:nth-child(1) {
+    width: 50px;
+} /* 체크박스 */
+.cart-table th:nth-child(2) {
+    width: 40%;
+} /* 상품명 */
+.cart-table th:nth-child(3) {
+    width: 30%;
+} /* 날짜 */
+.cart-table th:nth-child(4) {
+    width: 20%;
+} /* 금액 */
+/* //////////////////////////// */
+/* //////////pagination/////////// */
+/* //////////////////////////// */
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.pagination li a {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    border: 1px solid #444;
+    color: #444;
+    margin: 0 4px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    line-height: 1;
+}
+
+.pagination li a.active {
+    background-color: #5e2bb8;
+    color: #fff;
+    border-color: #5e2bb8;
+}
+
+.pagination li a.disabled {
+    color: #dddddd;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+/* ///////////프로필카드////////// */
+.inner_mypage .Profile_card {
+    width: 183px;
+    background: #e7e3ef;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    flex-shrink: 0;
+    gap: 7px;
+    border-radius: 8px;
+}
+.inner_mypage .Profile_card .Profile_name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.inner_mypage .Profile_card .Profile_name .img {
+    width: 50px;
+    height: 50px;
+}
+.inner_mypage .Profile_card button {
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    padding: 8px 18px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    color: #333;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Profile_card .user_point {
+    padding: 6px 8px;
+    border-radius: 13px;
+    transition: all 0.3s ease; 
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    gap: 8px;
+}
+.noti .noti_title {
+    display: flex;
+    gap: 7px;
+}
+.noti .noti_title img {
+    width: 21px;
+    height: 21px;
+}
+.Profile_card .count_point {
+    display: flex;
+    gap: 4px;
+}
+.Profile_card .count_point .point_value {
+    font-weight: 600;
+}
+.Profile_card .count_point .point_unit {
+    font-weight: 400;
+}
+.Profile_card .user_point:hover {
+    background-color: #d7cde9;
+}
+.title_wrapper {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+.badge_dot {
+    position: absolute;
+    top: 0px;
+    right: -10px;
+
+    width: 7px;
+    height: 7px;
+    background-color: #ff3b30;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+/* 버튼 눌렀을때 지속효과 : hover와 active 연결  */
+.menu_left button:hover,
+.menu_left button.active {
+    border: 1px solid #5e2bb8;
+    color: #fff;
+    background-color: #5e2bb8;
+}
+.Profile_card button:hover {
+    border: 1px solid #5e2bb8;
+    background-color: #5e2bb8;
+    color: #fff;
+}
+.NotionBox {
+    width: 183px;
+    padding: 15px;
+    gap: 7px;
+    border-radius: 8px;
+    background-color: #e7e3ef;
+    /* border: 1px solid #dcd7e5; */
+    box-sizing: border-box;
+    margin-top: 10px;
+
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+}
+.NotionBox_title {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px; 
+    width: 100%;
+}
+
+.NotionBox_title span {
+    font-size: 16px;
+    font-weight: 600;
+    color: #5e2bb8;
+}
+
+.NotionBox_detail {
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    gap: 8px;
+}
+
+.NotionBox_detail p {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #444;
+    padding: 8px;
+    background: #fff;
+    border-radius: 6px;
+    margin: 0;
+    border-left: 3px solid #5e2bb8; 
+    box-shadow: 0 2px 4px #e8e8e8;
+}

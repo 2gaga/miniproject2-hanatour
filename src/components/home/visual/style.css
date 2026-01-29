@@ -1,0 +1,218 @@
+.visual-title {
+    white-space: pre-line;
+    text-align: left;
+    position: absolute;
+    top: 120px;
+    left: 610px;
+    z-index: 999;
+    font-size: 60px !important;
+    font-weight: 700 !important;
+    line-height: 1.5;
+    color: #000; /* 기본 검은색 */
+    transition:
+        color 0.5s ease,
+        opacity 0.5s ease;
+    opacity: 1;
+}
+
+.visual-title.is-white {
+    color: #fff !important;
+}
+
+.visual {
+    width: 100%;
+    max-width: 1920px;
+    height: 740px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.mySwiper {
+    width: 100%;
+    height: 100%;
+}
+
+.mySwiper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.visual .swiper-pagination {
+    bottom: 30px;
+}
+/* ////////검색 칩버튼///////// */
+.easytap .easylist {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.easytap .easylist li {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    color: #fff;
+    cursor: pointer;
+    padding: 6px 18px;
+    border-radius: 12px; /* 쿠키 모양 */
+    transition:
+        background 0.3s,
+        color 0.3s;
+}
+.easytap .easylist li.active {
+    background: #000;
+    color: #fff;
+}
+/* ///////////여기가 검색 메뉴///////////탭///////// */
+.visualtap *,
+.visualtap *::before,
+.visualtap *::after {
+    box-sizing: border-box;
+}
+.main .visualtap {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 613px;
+    z-index: 70;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.visualtap .easytap {
+    display: flex;
+    flex-direction: column;
+    width: 1164px;
+    height: 129px;
+    background: #8e8e8e;
+    flex-direction: column;
+    border-radius: 20px;
+    /* padding: 15px; */
+    padding: 60px 20px;
+    box-sizing: border-box;
+    /* height: auto; */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.easytap .easylist {
+    display: flex;
+    gap: 26px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.easytap .easylist li {
+    gap: 3px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+    padding: 6px 18px;
+    border-radius: 12px;
+    transition:
+        background 0.3s,
+        color 0.3s;
+}
+
+/* 검색 버튼 */
+.visualform .easysearch-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 44px;
+    /* padding: 10px 12px; */
+    border-radius: 10px;
+    border: 2px solid #fff;
+}
+.visualform .easysearch-btn img {
+    width: 24px;
+    height: 24px;
+}
+/* 탭 리스트 */
+.visualtap .easylist {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.visualtap .easylist li {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.visualtap .easylist li img {
+    width: 24px;
+    height: 24px;
+}
+
+.visualtap .easylist li span {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+/* form */
+.visualtap .visualform {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* 각 입력창 */
+.visualtap .visualform div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    /* background: #8e8e8e; */
+    /* border-radius: 8px; */
+    /* padding: 5px 10px; */
+}
+/* ///////하단부/////////// */
+.placeform input,
+.dateform input,
+.peopleform select {
+    outline: none;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    background: #8e8e8e;
+    color: #fff;
+    /* height: 44px; */
+    height: 44px;
+    width: 280px;
+    padding-left: 45px;
+    padding-right: 10px;
+    font-size: 16px; /* 텍스트 크기도 함께 조절 가능 */
+}
+/* 부모 컨테이너를 relative로 */
+.placeform,
+.dateform,
+.peopleform {
+    position: relative;
+}
+
+/* 아이콘을 input 안에 넣기 */
+.placeform img,
+.dateform img,
+.peopleform img {
+    position: absolute;
+    left: 13px; /* 요청하신 왼쪽 여백 */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    pointer-events: none; /* 클릭 시 input 가리키지 않게 */
+}
+.placeform input::placeholder {
+    color: #dadada;
+}
