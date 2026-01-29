@@ -6,7 +6,7 @@ import { Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import './style.css';
-import EasyTap from './easytap';
+import EasyTap from './EasyTap';
 
 const Visual = () => {
     const [current, setCurrent] = useState(0);
